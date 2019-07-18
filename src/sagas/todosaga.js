@@ -6,7 +6,7 @@ import {  todoSuccess , todoError} from '../actions/index';
 
 // add new todo api call
 export function* addtodoApi(data) {
-  const requestURL = `/addtodo`;
+  const requestURL = `http://localhost:4000/addtodo`;
     try {
         // prepare post data for api
         const options = {
@@ -32,7 +32,7 @@ export function* addtodoApi(data) {
 // update todo  api call
 
 export function* updateTodo(data) {
-  const requestURL = `/updatetodo`;
+  const requestURL = `http://localhost:4000/updatetodo`;
   try {
     const options = {
       method: 'POST',

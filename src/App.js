@@ -64,7 +64,7 @@ class App extends React.Component{
         <button onClick={this.addTask}>Add task</button>
 
         {/* // show loading indcator while fetching api request */}
-        {/* {loading && <LoadingIndicator />} */}
+        {loading && <LoadingIndicator />}
 
         {/* // show success messages on api request */}
         {success && <span >{success}</span>}
